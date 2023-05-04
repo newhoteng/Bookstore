@@ -19,7 +19,7 @@ function BookItem() {
           <p>Completed</p>
         </div>
       </div>
-      <div className="current-chapter">
+      <div className={styles.percentring}>
         <p>CURRENT CHAPTER</p>
         <p>Chapter 17</p>
         <button type="button">UPDATE PROGRESS</button>
