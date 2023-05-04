@@ -1,12 +1,9 @@
-// import { useState } from 'react';
+import React from 'react';
 
-const BookItem = () => {
-
-  // const [editing, setEditing] = useState(false);
-  
+function BookItem() {
   return (
     <li>
-      <div className='book-details'>
+      <div className="book-details">
         <p>Action</p>
         <p>The Hunger Games</p>
         <p>Suzanne Collins</p>
@@ -15,19 +12,19 @@ const BookItem = () => {
         <button type="button">Edit</button>
       </div>
       <div>
-        <div className="Percentage-circle"></div>
+        <div className="Percentage-circle" />
         <div>
           <p>64%</p>
           <p>Completed</p>
         </div>
       </div>
-      <div className='current-chapter'>
+      <div className="current-chapter">
         <p>CURRENT CHAPTER</p>
         <p>Chapter 17</p>
         <button type="button">UPDATE PROGRESS</button>
       </div>
     </li>
   );
-};
+}
 
 export default BookItem;

@@ -1,6 +1,8 @@
+import React from 'react';
+
 function Categories() {
   return (
-    <div>Pending</div>
+    <div>PENDING</div>
   );
 }
 

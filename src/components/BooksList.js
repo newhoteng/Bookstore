@@ -1,12 +1,12 @@
-const BooksList = (props) => {
-  const { todosProps, handleChange, delTodo } = props;
+import React from 'react';
+import BookItem from './BookItem';
+
+function BooksList() {
   return (
     <ul>
-      {todosProps.map((todo) => (
-        <TodoItem />
-      ))}
+      <BookItem />
     </ul>
   );
-};
+}
 
 export default BooksList;
