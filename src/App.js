@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import Calculator from './components/Calculator';
-// import Quote from './components/Quotes';
-// import HomePage from './components/HomePage';
 import NavBar from './components/NavBar';
+import HomePage from './components/HomePage';
+import CategoriesPage from './components/CategoriesPage';
 import './App.css';
 
 function App() {
@@ -10,8 +9,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<NavBar />}>
-          <Route index element={<Books />} />
-          <Route path="/categories" element={<Categories />} />
+          <Route index element={<HomePage />} />
+          <Route path="/categories" element={<CategoriesPage />} />
           <Route path="/*" element={<div>Page not found</div>} />
         </Route>
       </Routes>
