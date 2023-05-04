@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from '../styles/BookItem.module.css';
 
 function BookItem() {
   return (
-    <li>
+    <li className={styles.bookcard}>
       <div className="book-details">
         <p>Action</p>
         <p>The Hunger Games</p>

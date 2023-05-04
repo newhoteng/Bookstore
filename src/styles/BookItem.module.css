@@ -1,0 +1,14 @@
+.bookcard {
+  /* border: 1px solid red; */
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+
+nav li {
+  
+  padding: 5px 15px;
+  font-weight: 600;
+}
