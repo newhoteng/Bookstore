@@ -3,13 +3,7 @@ import { useSelector } from 'react-redux';
 import BookItem from './BookItem';
 
 function BooksList() {
-  // const dispatch = useDispatch();
   const books = useSelector((store) => store.books);
-
-  // item_id: 'item1',
-  // title: 'The Great Gatsby',
-  // author: 'John Smith',
-  // category: 'Fiction',
 
   return (
     <ul>

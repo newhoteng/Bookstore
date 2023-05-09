@@ -38,10 +38,6 @@ function BookItem({
     </li>
   );
 }
-// item_id: 'item1',
-// title: 'The Great Gatsby',
-// author: 'John Smith',
-// category: 'Fiction',
 
 BookItem.propTypes = {
   itemId: PropTypes.string.isRequired,
