@@ -78,7 +78,7 @@ npm install
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :telescope: Future Features <a name="future-features"></a>
-  - None pending so far, open to suggestions.
+  - Website navigation
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
