@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/booksSlice';
+import { postBook, addBook } from '../redux/books/booksSlice';
+// import { getBookItems } from '../redux/books/booksSlice';
 
 function InputBook() {
   const [payload, setPayload] = useState({
@@ -22,6 +23,7 @@ function InputBook() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newBook = { item_id: uuidv4(), ...payload };
+    dispatch(postBook(newBook));
     dispatch(addBook(newBook));
     setPayload({
       title: '',

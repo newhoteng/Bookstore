@@ -9,7 +9,7 @@ function BooksList() {
 
   useEffect(() => {
     dispatch(getBookItems());
-  }, []);
+  }, [dispatch]);
 
   if (isLoading) {
     return (

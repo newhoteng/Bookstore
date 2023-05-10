@@ -27,45 +27,47 @@ export const getBookItems = createAsyncThunk('books/getBookItems', async (name, 
       };
       arrayOfBooks.push(bookObj);
     });
-    // console.log(arrayOfBooks);
     return arrayOfBooks;
   } catch (error) {
     return thunkAPI.rejectWithValue('something went wrong');
   }
 });
 
-// export const postBook = createAsyncThunk('books/postBook', async (newBook, thunkAPI) => {
-//   try {
-//     const response = await axios.post(url, newBook);
-//     return response.data;
-//   } catch (error) {
-//     return thunkAPI.rejectWithValue('something went wrong');
-//   }
-// });
+export const postBook = createAsyncThunk('books/postBook', async (newBook, thunkAPI) => {
+  try {
+    const resp = await axios.post(`${baseUrl}/apps/${appId}/books`, newBook);
+    console.log(resp.data);
+    return resp.data;
+  } catch (error) {
+    return thunkAPI.rejectWithValue('something went wrong');
+  }
+});
 
-// export const deleteBook = createAsyncThunk('books/deleteBook', async (id, thunkAPI) => {
-//   try {
-//     const response = await axios.delete(`${url}/${id}`);
-//     return response.data;
-//   } catch (error) {
-//     return thunkAPI.rejectWithValue('something went wrong');
-//   }
-// });
+export const deleteBook = createAsyncThunk('books/deleteBook', async (id, thunkAPI) => {
+  try {
+    const response = await axios.delete(`${baseUrl}/apps/${appId}/books/${id}`);
+    return response.data;
+  } catch (error) {
+    return thunkAPI.rejectWithValue('something went wrong');
+  }
+});
 
 const booksSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
     addBook: (state, action) => {
-      state.push(action.payload);
+      state.books.push(action.payload);
     },
     removeBook: (state, action) => {
+      console.log(action);
       const itemId = action.payload;
-      const remainingBooks = state.filter((book) => book.item_id !== itemId);
-      state.splice(0, state.length, ...remainingBooks);
+      const remainingBooks = state.books.filter((book) => book.item_id !== itemId);
+      state.books.splice(0, state.books.length, ...remainingBooks);
     },
   },
   extraReducers: (builder) => {
+    // getbookItems
     builder.addCase(getBookItems.pending, (state) => {
       state.isLoading = true;
     });
@@ -74,6 +76,28 @@ const booksSlice = createSlice({
       state.books = action.payload;
     });
     builder.addCase(getBookItems.rejected, (state, action) => {
+      state.error = action.payload;
+      state.isLoading = false;
+    });
+    // postbook
+    builder.addCase(postBook.pending, (state) => {
+      state.isLoading = true;
+    });
+    builder.addCase(postBook.fulfilled, (state) => {
+      state.isLoading = false;
+    });
+    builder.addCase(postBook.rejected, (state, action) => {
+      state.error = action.payload;
+      state.isLoading = false;
+    });
+    // deletebook
+    builder.addCase(deleteBook.pending, (state) => {
+      state.isLoading = true;
+    });
+    builder.addCase(deleteBook.fulfilled, (state) => {
+      state.isLoading = false;
+    });
+    builder.addCase(deleteBook.rejected, (state, action) => {
       state.error = action.payload;
       state.isLoading = false;
     });

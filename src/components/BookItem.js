@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { deleteBook, removeBook } from '../redux/books/booksSlice';
 import styles from '../styles/BookItem.module.css';
 
 function BookItem({
@@ -17,7 +17,10 @@ function BookItem({
         <button type="button">Comments</button>
         <button
           type="button"
-          onClick={() => dispatch(removeBook(itemId))}
+          onClick={() => {
+            dispatch(deleteBook(itemId));
+            dispatch(removeBook(itemId));
+          }}
         >
           Remove
         </button>
