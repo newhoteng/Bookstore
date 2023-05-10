@@ -1,9 +1,30 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import BookItem from './BookItem';
+import { getBookItems } from '../redux/books/booksSlice';
 
 function BooksList() {
-  const books = useSelector((store) => store.books);
+  const { books, isLoading, error } = useSelector((store) => store.books);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getBookItems());
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div>
+        <h1>Loading...</h1>
+      </div>
+    );
+  }
+  if (error) {
+    return (
+      <div>
+        <h1>Something went wrong</h1>
+      </div>
+    );
+  }
 
   return (
     <ul>
