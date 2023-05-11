@@ -2,10 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const baseUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi';
-const appId = '1ee74UDSIFBzAmI6EKU0';
-// const appId = 'or3f9VGJdztMdPwsexmB';
-// 0aDjGDxcEz1xoWIOXeZZ, or3f9VGJdztMdPwsexmB, yyVKMNioOwMkQ2nkDALd, J7CNnYilNiTRsEHneh8Q;
-// const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/1ee74UDSIFBzAmI6EKU0/books';
+const appId = 'or3f9VGJdztMdPwsexmB';
 
 const initialState = {
   books: [],
