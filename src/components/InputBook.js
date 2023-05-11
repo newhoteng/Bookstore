@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { postBook, addBook } from '../redux/books/booksSlice';
-import styles from '../styles/BookItem.module.css';
+import styles from '../styles/HomePage.module.css';
 
 function InputBook() {
   const [payload, setPayload] = useState({

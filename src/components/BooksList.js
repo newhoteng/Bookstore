@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import BookItem from './BookItem';
 import { getBookItems } from '../redux/books/booksSlice';
-import styles from '../styles/BookItem.module.css';
+import styles from '../styles/HomePage.module.css';
 
 function BooksList() {
   const { books, isLoading, error } = useSelector((store) => store.books);

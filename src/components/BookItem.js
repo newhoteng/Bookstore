@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { deleteBook, removeBook } from '../redux/books/booksSlice';
-import styles from '../styles/BookItem.module.css';
+import styles from '../styles/HomePage.module.css';
 
 function BookItem({
   itemId, title, author, category,
