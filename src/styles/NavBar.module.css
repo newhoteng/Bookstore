@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 6.25rem;
-  border: 1px solid red;
   height: 5.9rem;
 }
 
@@ -19,13 +18,16 @@
   background-color: #fff;
 }
 
-
 nav ul {
   display: flex;
   padding: 0;
   margin: 15px;
   align-items: baseline;
   gap: 2.5rem;
+}
+
+nav li {
+  list-style: none;
 }
 
 .nav li:nth-child(1) {
@@ -44,10 +46,6 @@ nav li a {
 
 .nav li:nth-child(3) a {
   opacity: 0.5;
-}
-
-nav li {
-  list-style: none;
 }
 
 .profile {

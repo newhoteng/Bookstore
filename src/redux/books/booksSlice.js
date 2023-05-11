@@ -33,7 +33,6 @@ export const getBookItems = createAsyncThunk('books/getBookItems', async (name, 
 export const postBook = createAsyncThunk('books/postBook', async (newBook, thunkAPI) => {
   try {
     const resp = await axios.post(`${baseUrl}/apps/${appId}/books`, newBook);
-    console.log(resp.data);
     return resp.data;
   } catch (error) {
     return thunkAPI.rejectWithValue('something went wrong');
@@ -57,7 +56,6 @@ const booksSlice = createSlice({
       state.books.push(action.payload);
     },
     removeBook: (state, action) => {
-      console.log(action);
       const itemId = action.payload;
       const remainingBooks = state.books.filter((book) => book.item_id !== itemId);
       state.books.splice(0, state.books.length, ...remainingBooks);
