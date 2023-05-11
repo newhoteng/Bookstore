@@ -30,7 +30,7 @@ Bookstore is a website that displays a list of books and allow users to add or r
 </details>
 <details><summary>Backend</summary>
 <ul>
-  <li>[Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739)</li>
+  <li><a href='https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739'>Bookstore API</a></li>
 </ul>
 </details>
 
