@@ -28,6 +28,11 @@ Bookstore is a website that displays a list of books and allow users to add or r
   <li><a href="https://html.com/">React</a></li>
 </ul>
 </details>
+<details><summary>Backend</summary>
+<ul>
+  <li>[Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739)</li>
+</ul>
+</details>
 
 ### Key Features
   - Display a list of books
@@ -78,7 +83,7 @@ npm install
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :telescope: Future Features <a name="future-features"></a>
-  - Website navigation
+  - Styling
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
