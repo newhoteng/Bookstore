@@ -9,7 +9,7 @@
   justify-content: space-between;
   padding: 0 6.25rem;
   /* height: 5.9rem; */
-  border: 1px solid red;
+  background-color: #fff;
 }
 
 nav ul {
@@ -19,7 +19,6 @@ nav ul {
   margin: 15px;
   align-items: center;
   gap: 2.5rem;
-  border: 1px solid blue;
 }
 
 nav li {
@@ -45,8 +44,17 @@ nav li a {
 }
 
 .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 2.813rem;
   height: 2.813rem;
   border: solid 1px #e8e8e8;
   border-radius: 50%;
+}
+
+.userIcon {
+  color: #0290ff;
+  width: 1.063rem;
+  height: 1.063rem;
 }

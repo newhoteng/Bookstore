@@ -10,7 +10,7 @@ function BookItem({
   const dispatch = useDispatch();
   return (
     <li className={styles.bookcard}>
-      <div className="book-details">
+      <div className={styles.bookDetails}>
         <p>{category}</p>
         <p>{title}</p>
         <p>{author}</p>
@@ -27,16 +27,18 @@ function BookItem({
         <button type="button">Edit</button>
       </div>
       <div>
-        <div className="Percentage-circle" />
         <div>
-          <p>64%</p>
-          <p>Completed</p>
+          <div className="Percentage-circle" />
+          <div>
+            <p>64%</p>
+            <p>Completed</p>
+          </div>
         </div>
-      </div>
-      <div className={styles.percentring}>
-        <p>CURRENT CHAPTER</p>
-        <p>Chapter 17</p>
-        <button type="button">UPDATE PROGRESS</button>
+        <div className={styles.percentring}>
+          <p>CURRENT CHAPTER</p>
+          <p>Chapter 17</p>
+          <button type="button">UPDATE PROGRESS</button>
+        </div>
       </div>
     </li>
   );

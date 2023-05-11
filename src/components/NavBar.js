@@ -11,7 +11,7 @@ function NavBar() {
           <li><Link to="/">BOOKS</Link></li>
           <li><Link to="/categories">CATEGORIES</Link></li>
         </ul>
-        <div className={styles.profile}><ImUser className="user-icon" /></div>
+        <div className={styles.profile}><ImUser className={styles.userIcon} /></div>
       </nav>
       <Outlet />
     </>

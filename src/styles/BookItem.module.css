@@ -1,10 +1,19 @@
+.ul {
+  border: 2px solid blue;
+  padding: 0;
+}
 .bookcard {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-right: 50px;
+  border: 1px solid red;
 }
+
+/* .bookDetails {
+
+} */
 
 nav li {
   padding: 5px 15px;
