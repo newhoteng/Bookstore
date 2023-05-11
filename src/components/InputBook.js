@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { postBook, addBook } from '../redux/books/booksSlice';
+import styles from '../styles/BookItem.module.css';
 
 function InputBook() {
   const [payload, setPayload] = useState({
@@ -32,9 +33,9 @@ function InputBook() {
   };
 
   return (
-    <>
+    <div className={styles.formSection}>
       <p>ADD NEW BOOK</p>
-      <form className="form-container" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input
           name="title"
           type="text"
@@ -53,8 +54,8 @@ function InputBook() {
         />
         <button type="submit">ADD BOOK</button>
       </form>
-      <span className="submit-warning" />
-    </>
+      <span />
+    </div>
   );
 }
 

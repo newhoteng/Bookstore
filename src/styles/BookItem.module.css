@@ -1,21 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .ul {
-  border: 2px solid blue;
-  padding: 0;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 0 2.5rem;
+  margin: 2.313rem 6.25rem 1.813rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.938rem;
 }
+
 .bookcard {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-right: 50px;
-  border: 1px solid red;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 100%;
 }
 
 /* .bookDetails {
 
 } */
+/* form */
 
-nav li {
-  padding: 5px 15px;
-  font-weight: 600;
+.formSection {
+  margin: 0 6.25rem 16.563rem;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.formSection p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-style: normal;
+  color: #888;
+  margin: 0;
+  letter-spacing: -0.18px;
+  margin-bottom: 1.188rem;
+}
+
+.formSection form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.125rem;
+}
+
+.formSection input {
+  height: 2.813rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 0 1.063rem;
+}
+
+.formSection input:nth-child(1) {
+  flex: 2 2 auto;
+}
+
+.formSection input:nth-child(2) {
+  flex: 0.75 0.75 auto;
+  max-width: 17.813rem;
+}
+
+.formSection input::placeholder {
+  color: #c4c4c4;
+  font-size: 1rem;
+}
+
+.formSection button {
+  height: 2.813rem;
+  max-width: 11.5rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  flex: 0.5 0.5 auto;
+}
+
+
+
+
