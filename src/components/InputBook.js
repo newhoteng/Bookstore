@@ -25,15 +25,10 @@ function InputBook() {
     dispatch(addBook(newBook));
     dispatch(postBook(newBook));
     setPayload({
+      ...payload,
       title: '',
       author: '',
-      ...payload,
     });
-    // setPayload({
-    //   title: '',
-    //   author: '',
-    //   ...payload,
-    // });
   };
 
   return (

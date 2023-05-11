@@ -5,8 +5,8 @@ function NavBar() {
   return (
     <>
       <nav className={styles.nav}>
-        <div className={styles.title}>Bookstore CMS</div>
         <ul>
+          <li>Bookstore CMS</li>
           <li><Link to="/">BOOKS</Link></li>
           <li><Link to="/categories">CATEGORIES</Link></li>
         </ul>
