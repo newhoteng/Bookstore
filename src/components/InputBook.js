@@ -7,7 +7,7 @@ function InputBook() {
   const [payload, setPayload] = useState({
     title: '',
     author: '',
-    category: 'Undefined',
+    category: 'Action',
   });
 
   const dispatch = useDispatch();
