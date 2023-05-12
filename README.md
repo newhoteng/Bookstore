@@ -39,6 +39,7 @@ Bookstore is a website that displays a list of books and allow users to add or r
   - A form to add new book
   - Button to remove a selected book
   - Single Page Application
+  - Styled using CSS modules
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,7 +84,7 @@ npm install
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :telescope: Future Features <a name="future-features"></a>
-  - Styling
+  - Category Page
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
