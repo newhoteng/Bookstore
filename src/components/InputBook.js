@@ -35,7 +35,7 @@ function InputBook() {
   return (
     <div className={styles.formSection}>
       <p className={styles.title}>ADD NEW BOOK</p>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.flexContainer} onSubmit={handleSubmit}>
         <input
           name="title"
           type="text"

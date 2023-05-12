@@ -26,9 +26,9 @@ function BooksList() {
       </ul>
     );
   }
-
+  // {`${styles.bookcard} ${styles.flexContainer}`}
   return (
-    <ul className={styles.ul}>
+    <ul className={`${styles.ul} ${styles.flexContainer}`}>
       {books.map((book) => (
         <BookItem
           key={book.item_id}

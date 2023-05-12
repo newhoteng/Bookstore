@@ -1,24 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textStyle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
 /* Books display section */
 .ul {
   border-bottom: 1px solid #e8e8e8;
   padding: 0 0 2.5rem;
   margin: 2.313rem 6.25rem 1.813rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
   gap: 0.938rem;
 }
 
 .bookcard {
   list-style: none;
-  display: flex;
-  align-items: center;
   justify-content: flex-start;
-  flex-wrap: wrap;
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   background-color: #fff;
@@ -49,18 +56,10 @@
 }
 
 .bookDetails p:nth-child(3) {
-  font-family: 'Roboto Slab', serif;
-  font-size: 0.875rem;
-  font-weight: 300;
-  color: #4386bf;
   margin: 0 0 1.125rem;
 }
 
 .bookDetails button {
-  font-family: 'Roboto Slab', serif;
-  font-size: 0.875rem;
-  font-weight: 300;
-  color: #4386bf;
   border: none;
   background-color: #fff;
   padding: 0;
@@ -82,16 +81,10 @@
 }
 
 .progress {
-  display: flex;
   gap: 3.668rem;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .progress .percentage {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 1.375rem;
   padding-right: 4.938rem;
   border-right: 1px solid #e8e8e8;
@@ -170,10 +163,6 @@
 }
 
 .formSection form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
   gap: 2.125rem;
 }
 
@@ -227,5 +216,9 @@
 @media all and (max-width: 768px) {
   .progress {
     flex-wrap: wrap;
+  }
+
+  .bookDetails {
+    flex: 1 1 100%;
   }
 }

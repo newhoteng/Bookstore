@@ -11,14 +11,14 @@ function BookItem({
 
   const dispatch = useDispatch();
   return (
-    <li className={styles.bookcard}>
+    <li className={`${styles.bookcard} ${styles.flexContainer}`}>
       <div className={styles.bookDetails}>
         <p>{defaultValues[index % 3].category}</p>
         <p>{title}</p>
-        <p>{author}</p>
-        <button type="button">Comments</button>
+        <p className={styles.textStyle}>{author}</p>
+        <button className={styles.textStyle} type="button">Comments</button>
         <button
-          className={styles.remove}
+          className={`${styles.remove} ${styles.textStyle}`}
           type="button"
           onClick={() => {
             dispatch(deleteBook(itemId));
@@ -27,10 +27,10 @@ function BookItem({
         >
           Remove
         </button>
-        <button type="button">Edit</button>
+        <button className={styles.textStyle} type="button">Edit</button>
       </div>
-      <div className={styles.progress}>
-        <div className={styles.percentage}>
+      <div className={`${styles.progress} ${styles.flexContainer}`}>
+        <div className={`${styles.percentage} ${styles.flexContainer}`}>
           <div className={styles.percentring} />
           <div className={styles.text}>
             <p>

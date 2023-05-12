@@ -5,13 +5,13 @@ import styles from '../styles/NavBar.module.css';
 function NavBar() {
   return (
     <>
-      <nav className={styles.nav}>
-        <ul>
+      <nav className={`${styles.nav} ${styles.flexContainer}`}>
+        <ul className={styles.flexContainer}>
           <li>Bookstore CMS</li>
           <li><Link to="/">BOOKS</Link></li>
           <li><Link to="/categories">CATEGORIES</Link></li>
         </ul>
-        <div className={styles.profile}><ImUser className={styles.userIcon} /></div>
+        <div className={`${styles.profile} ${styles.flexContainer}`}><ImUser className={styles.userIcon} /></div>
       </nav>
       <Outlet />
     </>
