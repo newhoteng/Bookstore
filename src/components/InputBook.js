@@ -8,7 +8,7 @@ function InputBook() {
   const [payload, setPayload] = useState({
     title: '',
     author: '',
-    category: 'Action',
+    category: '',
   });
 
   const dispatch = useDispatch();
@@ -34,7 +34,7 @@ function InputBook() {
 
   return (
     <div className={styles.formSection}>
-      <p>ADD NEW BOOK</p>
+      <p className={styles.title}>ADD NEW BOOK</p>
       <form onSubmit={handleSubmit}>
         <input
           name="title"

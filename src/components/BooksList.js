@@ -14,16 +14,16 @@ function BooksList() {
 
   if (isLoading) {
     return (
-      <div>
+      <ul>
         <h1>Loading...</h1>
-      </div>
+      </ul>
     );
   }
   if (error) {
     return (
-      <div>
+      <ul>
         <h1>Something went wrong</h1>
-      </div>
+      </ul>
     );
   }
 
@@ -36,6 +36,7 @@ function BooksList() {
           title={book.title}
           author={book.author}
           category={book.category}
+          index={books.indexOf(book)}
         />
       ))}
     </ul>
