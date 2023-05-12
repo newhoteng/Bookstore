@@ -92,6 +92,17 @@
   border-radius: 50%;
  }
 
+ .percentring {
+  width: 4.25rem;
+  height: 4.25rem;
+  background: linear-gradient(#fff, #fff) padding-box,
+    conic-gradient(#307bbe, #379cf6 230.4deg, #e8e8e8 230.4deg) border-box;
+    /* linear-gradient(45deg, purple, orange) border-box; #307bbe */
+  border: 5px solid transparent;
+  border-radius: 50px;
+  /* padding: 10px 20px; */
+ }
+
  .text p:nth-child(1) {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
