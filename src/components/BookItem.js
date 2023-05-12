@@ -16,6 +16,7 @@ function BookItem({
         <p>{author}</p>
         <button type="button">Comments</button>
         <button
+          className={styles.remove}
           type="button"
           onClick={() => {
             dispatch(deleteBook(itemId));
@@ -26,15 +27,15 @@ function BookItem({
         </button>
         <button type="button">Edit</button>
       </div>
-      <div>
-        <div>
-          <div className="Percentage-circle" />
-          <div>
+      <div className={styles.progress}>
+        <div className={styles.percentage}>
+          <div className={styles.percentring} />
+          <div className={styles.text}>
             <p>64%</p>
             <p>Completed</p>
           </div>
         </div>
-        <div className={styles.percentring}>
+        <div className={styles.chapter}>
           <p>CURRENT CHAPTER</p>
           <p>Chapter 17</p>
           <button type="button">UPDATE PROGRESS</button>
