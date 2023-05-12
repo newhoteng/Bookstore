@@ -8,6 +8,11 @@ const initialState = {
   books: [],
   isLoading: false,
   error: undefined,
+  defaultValues: [
+    { category: 'Action', percentage: '64%', chapter: 'Chapter 17' },
+    { category: 'Science Fiction', percentage: '8%', chapter: 'Chapter 3: "A Lesson Learned"' },
+    { category: 'Economy', percentage: '0%', chapter: 'Introduction' },
+  ],
 };
 
 export const getBookItems = createAsyncThunk('books/getBookItems', async (name, thunkAPI) => {
