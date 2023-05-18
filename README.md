@@ -44,8 +44,7 @@ Bookstore is a website that displays a list of books and allow users to add or r
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :rocket: Live Demo <a name="live-demo"></a>
-- Pending
-<!-- [Bookstore](https://newhoteng.github.io/Bookstore/) -->
+- [Bookstore](https://newhoteng.github.io/Bookstore/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
