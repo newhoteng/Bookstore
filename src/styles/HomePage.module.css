@@ -90,8 +90,7 @@
   border-right: 1px solid #e8e8e8;
 }
 
-/* style with variables */
-.percentring {
+/* .percentring {
   width: 4.25rem;
   height: 4.25rem;
   background:
@@ -99,7 +98,7 @@
     conic-gradient(#307bbe, #379cf6 230.4deg, #e8e8e8 230.4deg) border-box;
   border: 5px solid transparent;
   border-radius: 50%;
-}
+} */
 
 .text p:nth-child(1) {
   font-family: 'Montserrat', sans-serif;

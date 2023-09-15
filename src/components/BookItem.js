@@ -9,6 +9,19 @@ function BookItem({
 }) {
   const { defaultValues } = useSelector((store) => store.books);
 
+  const percentToDegree = (defaultValues[index % 3].percentage / 100) * 360;
+
+  /* style with variables */
+  const progressRing = {
+    width: '4.25rem',
+    height: '4.25rem',
+    background:
+      `linear-gradient(#fff, #fff) padding-box,
+      conic-gradient(#307bbe, #379cf6 ${percentToDegree}deg, #e8e8e8 ${percentToDegree}deg) border-box`,
+    border: '5px solid transparent',
+    borderRadius: '50%',
+  };
+
   const dispatch = useDispatch();
   return (
     <li className={`${styles.bookcard} ${styles.flexContainer}`}>
@@ -31,10 +44,11 @@ function BookItem({
       </div>
       <div className={`${styles.progress} ${styles.flexContainer}`}>
         <div className={`${styles.percentage} ${styles.flexContainer}`}>
-          <div className={styles.percentring} />
+          <div style={progressRing} />
           <div className={styles.text}>
             <p>
               {defaultValues[index % 3].percentage}
+              %
             </p>
             <p>Completed</p>
           </div>
