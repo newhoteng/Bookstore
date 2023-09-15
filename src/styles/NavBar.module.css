@@ -37,10 +37,6 @@ nav li a {
   color: #121212;
 }
 
-.nav li:nth-child(3) a {
-  opacity: 0.5;
-}
-
 .profile {
   justify-content: center;
   width: 2.813rem;
