@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter basename="/bookstore">
+    <BrowserRouter basename="/Bookstore">
       <Routes>
         <Route path="/" element={<NavBar />}>
           <Route index element={<HomePage />} />
