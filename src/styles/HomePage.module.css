@@ -90,16 +90,6 @@
   border-right: 1px solid #e8e8e8;
 }
 
-/* .percentring {
-  width: 4.25rem;
-  height: 4.25rem;
-  background:
-    linear-gradient(#fff, #fff) padding-box,
-    conic-gradient(#307bbe, #379cf6 230.4deg, #e8e8e8 230.4deg) border-box;
-  border: 5px solid transparent;
-  border-radius: 50%;
-} */
-
 .text p:nth-child(1) {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
@@ -146,9 +136,9 @@
   height: 2.063rem;
 }
 
-/* form */
+/* form 16.563rem */
 .formSection {
-  margin: 0 6.25rem 16.563rem;
+  margin: 0 6.25rem 2.313rem;
   font-family: 'Montserrat', sans-serif;
 }
 
